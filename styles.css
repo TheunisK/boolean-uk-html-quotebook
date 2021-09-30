@@ -1,0 +1,58 @@
+.header {
+    display: grid;
+    grid-area: header;
+    color: rgba(255, 255, 255, 0.89);
+    place-items: center;
+  }
+h1 {
+    font-family: 'Explora', cursive;
+    font-size: 60px;
+}
+h2 {
+    font-family: 'Explora', cursive;
+    font-size: 30px;
+    color: rgba(245, 245, 245, 0.747);
+}
+p {
+    line-height: 3rem;
+    margin: 15px;
+    font-size: 1.5rem;
+    font-family: 'Explora', cursive;
+    color: rgba(255, 255, 255, 0.979);
+}
+.left {
+    grid-area: left;
+  }
+.main {
+    display: grid;
+    grid-area: main;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    padding: 15px;
+  }
+.right {
+    grid-area: right;
+  }
+  .container {
+      display: grid;
+      height: 100vh;
+      grid-template: 
+      " header header header" 100px
+      "left main right" 1fr /
+      100px 1fr 100px;
+      background-color: rgb(1, 1, 32);
+  }
+  .jordan, .obama, .mandela {
+    background-color: rgba(128, 128, 128, 0.363);
+    padding: 30px;
+    padding-top: 50px;
+    text-transform: uppercase;
+  }
+  .jordan {
+    border-top-left-radius: 10px;
+  }
+  .mandela {
+    border-top-right-radius: 10px;
+  }
